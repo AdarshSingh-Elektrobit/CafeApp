@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnacksFragment">
+
+    <CheckBox
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/teaCheckBox"
+    android:text="Lays"
+    android:background="@drawable/round_corners"
+    android:gravity="center"
+    android:layout_marginTop="16dp"
+    android:textSize="18sp" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CoffeeCheckBox"
+        android:text="Kurkure"
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+        android:layout_below="@+id/teaCheckBox"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MilkCheckBox"
+        android:text="Pringles"
+        android:layout_below="@+id/CoffeeCheckBox"
+
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>

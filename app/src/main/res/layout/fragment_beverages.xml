@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeveragesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:textSize="40dp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/purple"-->
+<!--        android:text="Beverages" />-->
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teaCheckBox"
+        android:text="Tea"
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CoffeeCheckBox"
+        android:text="Coffee"
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+        android:layout_below="@+id/teaCheckBox"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MilkCheckBox"
+        android:text="Milk"
+        android:layout_below="@+id/CoffeeCheckBox"
+
+        android:background="@drawable/round_corners"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
