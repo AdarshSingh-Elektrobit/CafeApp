@@ -14,6 +14,9 @@
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,20 +25,16 @@
             </intent-filter>
         </activity>
 
-
         <provider
             android:name=".MyContentProvider"
             android:authorities="com.example.firstapplication.provider"
             android:enabled="true"
             android:exported="true" />
-
-
         <provider
             android:name=".MyContentProvider"
             android:authorities="com.example.firstapplicationOrder.provider"
             android:enabled="true"
             android:exported="true" />
-
     </application>
 
 </manifest>

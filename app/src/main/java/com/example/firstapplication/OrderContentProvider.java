@@ -18,7 +18,7 @@ public class OrderContentProvider extends ContentProvider {
 // to perform query
     private SQLiteDatabase db;
     // declaring name of the database
-    static final String DATABASE_NAME = "ElektrobitOrdererDB";
+    static final String DATABASE_NAME = "ElektrobitOrderDB";
     // declaring table name of the database
     static final String TABLE_NAME = "Orders";
     // declaring version of the database
