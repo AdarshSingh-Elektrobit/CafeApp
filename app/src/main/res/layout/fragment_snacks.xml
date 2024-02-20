@@ -8,7 +8,7 @@
     <CheckBox
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/teaCheckBox"
+    android:id="@+id/lays"
     android:text="Lays"
     android:background="@drawable/round_corners"
     android:gravity="center"
@@ -17,19 +17,19 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/CoffeeCheckBox"
+        android:id="@+id/kurkure"
         android:text="Kurkure"
         android:background="@drawable/round_corners"
         android:gravity="center"
-        android:layout_below="@+id/teaCheckBox"
+        android:layout_below="@+id/lays"
         android:layout_marginTop="16dp"
         android:textSize="18sp" />
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/MilkCheckBox"
+        android:id="@+id/pringles"
         android:text="Pringles"
-        android:layout_below="@+id/CoffeeCheckBox"
+        android:layout_below="@+id/kurkure"
 
         android:background="@drawable/round_corners"
         android:gravity="center"

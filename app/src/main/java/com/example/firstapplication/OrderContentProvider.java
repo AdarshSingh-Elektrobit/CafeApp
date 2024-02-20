@@ -24,13 +24,11 @@ public class OrderContentProvider extends ContentProvider {
     // declaring version of the database
     static final int DATABASE_VERSION = 1;
     static final String PROVIDER_NAME = "com.example.firstapplicationOrder.provider";
-    static final String URL = "content://" + PROVIDER_NAME + "/Users";
+    static final String URL = "content://" + PROVIDER_NAME + "/Orders";
     // parsing the content URI
     static final Uri CONTENT_URI = Uri.parse(URL);
     static final String id = "id";
-    static final String Beverages = "Beverages";
-    static final String Pastry = "Pastry";
-    static final String Snacks = "Snacks";
+    static final String orderList = "orderList";
 
 
 
@@ -40,7 +38,7 @@ public class OrderContentProvider extends ContentProvider {
     // sql query to create the table
     static final String CREATE_DB_TABLE = " CREATE TABLE " + TABLE_NAME
             + " (id INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + " Beverages TEXT NOT NULL,"+" Pastry TEXT NOT NULL,"+" Snacks TEXT NOT NULL)";
+            + " orderList TEXT  ) ";
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
         public DatabaseHelper(@Nullable Context context) {
@@ -61,7 +59,7 @@ public class OrderContentProvider extends ContentProvider {
 // every time user access table under content provider
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 // to access whole table
-        uriMatcher.addURI(PROVIDER_NAME, "Users", uriCode);
+        uriMatcher.addURI(PROVIDER_NAME, "Orders", uriCode);
 // to access a particular row
 // of the table
 //uriMatcher.addURI(PROVIDER_NAME, "users/*", uriCode);
@@ -99,7 +97,7 @@ public class OrderContentProvider extends ContentProvider {
     }
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
-                        String[] selectionArgs, String sortOrder) {
+                        String[] selectionArgs, String  sortOrder) {
         Cursor cursor = db.query(TABLE_NAME, projection, selection, selectionArgs, null,
                 null, sortOrder);
         return cursor;

@@ -5,14 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".BeveragesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:textSize="40dp"-->
-<!--        android:gravity="center"-->
-<!--        android:textColor="@color/purple"-->
-<!--        android:text="Beverages" />-->
+
 
     <CheckBox
         android:layout_width="match_parent"
@@ -26,7 +19,7 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/CoffeeCheckBox"
+        android:id="@+id/coffeeCheckBox"
         android:text="Coffee"
         android:background="@drawable/round_corners"
         android:gravity="center"
@@ -36,9 +29,9 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/MilkCheckBox"
+        android:id="@+id/milkCheckBox"
         android:text="Milk"
-        android:layout_below="@+id/CoffeeCheckBox"
+        android:layout_below="@+id/coffeeCheckBox"
 
         android:background="@drawable/round_corners"
         android:gravity="center"

@@ -31,7 +31,7 @@
             android:enabled="true"
             android:exported="true" />
         <provider
-            android:name=".MyContentProvider"
+            android:name=".OrderContentProvider"
             android:authorities="com.example.firstapplicationOrder.provider"
             android:enabled="true"
             android:exported="true" />
